@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab330536-fd95-47bd-b221-1de250112c34" name="Changes" comment="" />
+    <list default="true" id="ab330536-fd95-47bd-b221-1de250112c34" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/security_config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/security_config.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +23,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -34,6 +43,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ZMhNlt38PHMtrgO2Ag1lqoIjhs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
@@ -41,10 +51,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.49310344" />
@@ -154,11 +165,23 @@
       <workItem from="1702237820874" duration="208000" />
       <workItem from="1702241562773" duration="1922000" />
       <workItem from="1702294599189" duration="8345000" />
-      <workItem from="1702401271557" duration="1181000" />
+      <workItem from="1702401271557" duration="3653000" />
+      <workItem from="1702410490579" duration="1762000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

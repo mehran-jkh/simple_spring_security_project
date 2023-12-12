@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -55,7 +56,7 @@ public class security_config extends WebSecurityConfigurerAdapter
 //				.password("1234")
 //				.roles("admin");
 
-		   auth.jdbcAuthentication().dataSource(dataSource).passwordEncoder(NoOpPasswordEncoder.getInstance());
+		   auth.jdbcAuthentication().dataSource(dataSource).passwordEncoder(getPasswordEncoder());
 
 	}
 
@@ -68,8 +69,12 @@ public void configure(WebSecurity web) throws Exception
 
 
 	@Bean
-	PasswordEncoder getPasswordEncoder(){
-		NoOpPasswordEncoder noOpPasswordEncoder= (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
-		return noOpPasswordEncoder;
+	PasswordEncoder getPasswordEncoder()
+	{
+		BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
+		return bCryptPasswordEncoder;
 	}
+
+
+
 }

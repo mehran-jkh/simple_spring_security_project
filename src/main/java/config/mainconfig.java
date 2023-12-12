@@ -4,6 +4,7 @@ package config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -13,7 +14,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("controllers")
+@ComponentScan(basePackages = {"controllers" , "services"})
 public class mainconfig {
 
 
@@ -34,6 +35,13 @@ public class mainconfig {
 		return dataSource;
 	}
 
+
+	@Bean
+	public JdbcTemplate jdbcTemplate()
+	{
+		JdbcTemplate jdbcTemplate=new JdbcTemplate(dataSource());
+		return jdbcTemplate;
+	}
 
 
 

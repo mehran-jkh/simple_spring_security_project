@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.32">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-13441||-9223372036854775808|c|G
-13441||10|c|G
-13441||10|C|G
-13441||10|T|G</Grants>
-      <IntrospectionStateNumber>3895</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3900</IntrospectionStateNumber>
       <ServerVersion>13.3</ServerVersion>
       <StartupTime>1702400974</StartupTime>
       <TimeZones>true ACDT
@@ -812,7 +804,7 @@ false Zulu
 13158||10|C|G
 13158||-9223372036854775808|U|G
 13158||10|U|G</Grants>
-      <IntrospectionStateNumber>3896</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3901</IntrospectionStateNumber>
       <ObjectId>13442</ObjectId>
       <Relations>sequence|table|246964|246966|1
 sequence|table|246972|246974|1
@@ -4152,7 +4144,7 @@ sequence|table|247045|247047|1
     <schema id="254" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>3896</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3901</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>287</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -5258,10 +5250,10 @@ sequence|table|247045|247047|1
       <TypeId>1043</TypeId>
     </column>
     <column id="405" parent="280" name="password">
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1226</StateNumber>
+      <StateNumber>3898</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="406" parent="280" name="enabled">
