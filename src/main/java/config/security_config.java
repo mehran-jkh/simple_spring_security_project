@@ -38,13 +38,19 @@ public class security_config extends WebSecurityConfigurerAdapter
 				.authorizeRequests()
 				.antMatchers("/helloworld")
 				.authenticated()
+				.antMatchers("/helloworld").authenticated()
+				.antMatchers("/coder").hasAuthority("CODER")
+				.antMatchers("/trainer").hasAuthority("TRAINER")
+
 				.and()
 				.formLogin().loginPage("/mycustomlogin")
 				.and()
 				.httpBasic()
 				.and()
 				.logout()
-		;
+				.and()
+				.exceptionHandling().accessDeniedPage("/accessdenied")
+				;
 
 	}
 

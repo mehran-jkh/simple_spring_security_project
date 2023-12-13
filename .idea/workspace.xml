@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702412734930</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977">
+      <created>1702495325411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702495325411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +210,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="building signup page" />
     <MESSAGE value="securing two endpoints based on the user's authorities" />
-    <option name="LAST_COMMIT_MESSAGE" value="securing two endpoints based on the user's authorities" />
+    <MESSAGE value="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977" />
   </component>
 </project>
