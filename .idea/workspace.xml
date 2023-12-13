@@ -166,8 +166,36 @@
       <workItem from="1702241562773" duration="1922000" />
       <workItem from="1702294599189" duration="8345000" />
       <workItem from="1702401271557" duration="3653000" />
+<<<<<<< Updated upstream
       <workItem from="1702410490579" duration="1762000" />
     </task>
+=======
+      <workItem from="1702410490579" duration="5110000" />
+      <workItem from="1702491464650" duration="1770000" />
+    </task>
+    <task id="LOCAL-00001" summary="building signup page">
+      <created>1702412734930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702412734930</updated>
+    </task>
+    <task id="LOCAL-00002" summary="securing two endpoints based on the user's authorities">
+      <created>1702494211633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702494211633</updated>
+    </task>
+    <task id="LOCAL-00003" summary="securing two endpoints based on the user's authorities">
+      <created>1702494338176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702494338176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +206,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
