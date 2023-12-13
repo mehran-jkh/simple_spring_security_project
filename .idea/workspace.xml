@@ -10,10 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab330536-fd95-47bd-b221-1de250112c34" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accessdenied.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/security_config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/security_config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/HelloWorldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/security_config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/security_config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/HelloWorldController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/security_config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/security_config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/controllers/HelloWorldController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -54,9 +60,10 @@
     <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.49310344" />
   </component>
@@ -166,8 +173,17 @@
       <workItem from="1702241562773" duration="1922000" />
       <workItem from="1702294599189" duration="8345000" />
       <workItem from="1702401271557" duration="3653000" />
-      <workItem from="1702410490579" duration="1762000" />
+      <workItem from="1702410490579" duration="5110000" />
+      <workItem from="1702491464650" duration="968000" />
     </task>
+    <task id="LOCAL-00001" summary="building signup page">
+      <created>1702412734930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702412734930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,5 +199,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="building signup page" />
+    <MESSAGE value="securing two endpoints based on the user's authorities" />
+    <option name="LAST_COMMIT_MESSAGE" value="securing two endpoints based on the user's authorities" />
   </component>
 </project>

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import services.SignupDAO;
 
+
 @Controller
 public class HelloWorldController {
 
@@ -19,6 +20,8 @@ public class HelloWorldController {
 	public void setSignupDAO(SignupDAO signupDAO) {
 		this.signupDAO = signupDAO;
 	}
+
+
 
 	@GetMapping("/helloworld")
 	public String helloworld()
@@ -47,6 +50,25 @@ public class HelloWorldController {
 		return "redirect:/mycustomlogin";
 	}
 
+
+	@RequestMapping("/coder")
+	public String coder_page()
+	{
+
+		return "coder";
+	}
+	@RequestMapping("/trainer")
+	public String trianer_page()
+	{
+
+		return "trainer";
+	}
+
+	@RequestMapping("/accessdenied")
+	public String access_denied()
+	{
+		return "accessdenied";
+	}
 
 
 
