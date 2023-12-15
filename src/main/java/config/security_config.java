@@ -8,9 +8,12 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 import javax.sql.DataSource;
 
@@ -53,19 +56,32 @@ public class security_config extends WebSecurityConfigurerAdapter
 				;
 
 	}
-
+//
+//	@Override
+//	protected void configure(AuthenticationManagerBuilder auth) throws Exception
+//	{
+////		auth.inMemoryAuthentication()
+////				.withUser("mehran")
+////				.password("1234")
+////				.roles("admin");
+//
+////		   auth.jdbcAuthentication().dataSource(dataSource).passwordEncoder(getPasswordEncoder());
+//
+//	}
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception
 	{
-//		auth.inMemoryAuthentication()
-//				.withUser("mehran")
-//				.password("1234")
-//				.roles("admin");
+		InMemoryUserDetailsManager inMemoryUserDetailsManager=new InMemoryUserDetailsManager() ;
 
-		   auth.jdbcAuthentication().dataSource(dataSource).passwordEncoder(getPasswordEncoder());
+		UserDetails userDetails1= User.withUsername("mehran").password("1234").roles("CODER" , "TRAINER").build();
+		UserDetails userDetails2= User.withUsername("jafar").password("4321").roles( "CODER").build();
 
+		inMemoryUserDetailsManager.createUser(userDetails1);
+		inMemoryUserDetailsManager.createUser(userDetails2);
+
+
+		auth.userDetailsService(inMemoryUserDetailsManager);
 	}
-
 
 @Override
 public void configure(WebSecurity web) throws Exception
@@ -77,8 +93,11 @@ public void configure(WebSecurity web) throws Exception
 	@Bean
 	PasswordEncoder getPasswordEncoder()
 	{
-		BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
-		return bCryptPasswordEncoder;
+//		BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
+//		return bCryptPasswordEncoder;
+
+		NoOpPasswordEncoder noOpPasswordEncoder= (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
+		return noOpPasswordEncoder;
 	}
 
 

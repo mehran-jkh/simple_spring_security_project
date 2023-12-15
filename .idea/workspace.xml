@@ -36,7 +36,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1-sources.jar!/org/springframework/security/core/userdetails/UserDetails.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.6.1/spring-security-config-5.6.1.jar!/org/springframework/security/config/annotation/SecurityConfigurerAdapter.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -175,6 +188,8 @@
       <workItem from="1702401271557" duration="3653000" />
       <workItem from="1702410490579" duration="5110000" />
       <workItem from="1702491464650" duration="968000" />
+      <workItem from="1702581766532" duration="2491000" />
+      <workItem from="1702666319114" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="building signup page">
       <created>1702412734930</created>
@@ -190,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702495325411</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="capturing username and authorities in handler method and using spring-security taglib">
+      <created>1702499238091</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702499238093</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +223,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -211,6 +245,7 @@
     <MESSAGE value="building signup page" />
     <MESSAGE value="securing two endpoints based on the user's authorities" />
     <MESSAGE value="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977" />
+    <MESSAGE value="capturing username and authorities in handler method and using spring-security taglib" />
+    <option name="LAST_COMMIT_MESSAGE" value="capturing username and authorities in handler method and using spring-security taglib" />
   </component>
 </project>
