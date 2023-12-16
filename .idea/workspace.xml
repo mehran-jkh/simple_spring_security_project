@@ -190,7 +190,7 @@
       <workItem from="1702491464650" duration="968000" />
       <workItem from="1702581766532" duration="2491000" />
       <workItem from="1702666319114" duration="5927000" />
-      <workItem from="1702712112862" duration="7859000" />
+      <workItem from="1702712112862" duration="11942000" />
     </task>
     <task id="LOCAL-00001" summary="building signup page">
       <created>1702412734930</created>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702673062734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implementing deleteaccount and changepassword using jdbcUserDetailsManager class">
+      <created>1702740114247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702740114247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +262,8 @@
     <MESSAGE value="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977" />
     <MESSAGE value="capturing username and authorities in handler method and using spring-security taglib" />
     <MESSAGE value="building two users by InMemoryUserDetailsManager class" />
-    <option name="LAST_COMMIT_MESSAGE" value="building two users by InMemoryUserDetailsManager class" />
+    <MESSAGE value="implementing deleteaccount and changepassword using jdbcUserDetailsManager class" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing deleteaccount and changepassword using jdbcUserDetailsManager class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -286,6 +294,38 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/HelloWorldController.java</url>
+          <line>88</line>
+          <properties class="controllers.HelloWorldController" method="delete_user">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/services/SignupDAOImpl.java</url>
+          <line>50</line>
+          <properties class="services.SignupDAOImpl" method="delete_user">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1-sources.jar!/org/springframework/security/provisioning/JdbcUserDetailsManager.java</url>
+          <line>248</line>
+          <properties class="org.springframework.security.provisioning.JdbcUserDetailsManager" method="deleteUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/config/mainconfig.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

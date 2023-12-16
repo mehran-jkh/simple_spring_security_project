@@ -49,7 +49,14 @@ public class mainconfig {
 	@Bean
 	public JdbcUserDetailsManager jdbcUserDetailsManager()
 	{
-		return new JdbcUserDetailsManager(dataSource());
+		JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(dataSource());
+
+		jdbcUserDetailsManager.setUsersByUsernameQuery("select username,password,is_active from test_user where username=?" );
+		jdbcUserDetailsManager .setAuthoritiesByUsernameQuery("select username,role_name from test_roles where username=?");
+		jdbcUserDetailsManager .setChangePasswordSql("update test_user set password=? where username=?");
+		jdbcUserDetailsManager .setDeleteUserSql("delete from test_user where username=?");
+
+		return  jdbcUserDetailsManager ;
 
 	}
 

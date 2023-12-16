@@ -65,7 +65,11 @@ public class security_config extends WebSecurityConfigurerAdapter
 //				.password("1234")
 //				.roles("admin");
 
-		   auth.jdbcAuthentication().dataSource(dataSource).passwordEncoder(getPasswordEncoder());
+		   auth.jdbcAuthentication()
+				   .dataSource(dataSource)
+				   .usersByUsernameQuery("select username,password,is_active from test_user where username=?")
+				   .authoritiesByUsernameQuery("select username,role_name from test_roles where username=?")
+				   .passwordEncoder(getPasswordEncoder());
 
 	}
 //	@Override
@@ -93,11 +97,11 @@ public void configure(WebSecurity web) throws Exception
 	@Bean
 	PasswordEncoder getPasswordEncoder()
 	{
-		BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
-		return bCryptPasswordEncoder;
+//		BCryptPasswordEncoder bCryptPasswordEncoder= new BCryptPasswordEncoder();
+//		return bCryptPasswordEncoder;
 
-//		NoOpPasswordEncoder noOpPasswordEncoder= (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
-//		return noOpPasswordEncoder;
+		NoOpPasswordEncoder noOpPasswordEncoder= (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
+		return noOpPasswordEncoder;
 	}
 
 
