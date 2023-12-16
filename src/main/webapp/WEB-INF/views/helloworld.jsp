@@ -27,10 +27,19 @@
     <a href="/trainer">trainers dashboard </a>
 </sec:authorize>
 
+<br>
+
+<a href="/deleteuser?username=${username_key}">Delete Acount</a>
+
+<br>
+
+<a href="/chagepassword">changepassword </a>
+
 
 <form:form action="logout" method="post">
     <input type="submit" value="logout">
 </form:form>
+
 
 </body>
 </html>

@@ -1,14 +1,17 @@
 package controllers;
 
+import models.changepasswordDTO;
 import models.signupDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.JdbcUserDetailsManager;
+import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import services.SignupDAO;
 
 import java.security.Principal;
@@ -19,7 +22,11 @@ public class HelloWorldController {
 
 	private SignupDAO signupDAO;
 
+	@Autowired
+	private JdbcUserDetailsManager jdbcUserDetailsManager;
 
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 
 	@Autowired
 	public void setSignupDAO(SignupDAO signupDAO) {
@@ -56,7 +63,6 @@ public class HelloWorldController {
 	public String signup_process(signupDTO signupdto)
 	{
 		signupDAO.save_user(signupdto);
-
 		return "redirect:/mycustomlogin";
 	}
 
@@ -78,6 +84,50 @@ public class HelloWorldController {
 	{
 		return "accessdenied";
 	}
+
+	@RequestMapping("/deleteuser")
+	public String delete_user(@RequestParam("username") String username)
+	{
+		signupDAO.delete_user(username);
+		return "redirect:/mycustomlogin";
+	}
+
+
+
+	@RequestMapping("/chagepassword")
+	public String chage_password(@ModelAttribute("changepasswordDTO_key") changepasswordDTO changepassword)
+	{
+		return "changepassword" ;
+	}
+
+	@PostMapping("/savechange")
+	public String sava_password(changepasswordDTO changepassword , Principal principal)
+	{
+		UserDetails userDetails= jdbcUserDetailsManager.loadUserByUsername(principal.getName());
+		boolean matches= passwordEncoder.matches(changepassword.getOldpassword() , userDetails.getPassword());
+
+		if(!changepassword.getNewpassword().equals(changepassword.getConfirmtpassword()))
+		{
+			return "redirect:/chagepassword?notMatched";
+		}
+
+		if(matches)
+		{
+			String encodedpassword=passwordEncoder.encode(changepassword.getConfirmtpassword());
+			jdbcUserDetailsManager.changePassword(changepassword.getOldpassword() , encodedpassword);
+			System.out.println("password changed");
+			return "redirect:/helloworld";
+		}
+
+
+		return "redirect:/chagepassword?invalidpassword";
+	}
+
+
+
+
+
+
 
 
 

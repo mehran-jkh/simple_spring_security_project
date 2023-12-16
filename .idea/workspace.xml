@@ -10,16 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab330536-fd95-47bd-b221-1de250112c34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accessdenied.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trainer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/security_config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/security_config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/HelloWorldController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config/security_config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/security_config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/HelloWorldController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/security_config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/security_config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/controllers/HelloWorldController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/accessdenied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/accessdenied.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/coder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/coder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/helloworld.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/helloworld.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/trainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/trainer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +189,8 @@
       <workItem from="1702410490579" duration="5110000" />
       <workItem from="1702491464650" duration="968000" />
       <workItem from="1702581766532" duration="2491000" />
-      <workItem from="1702666319114" duration="3188000" />
+      <workItem from="1702666319114" duration="5927000" />
+      <workItem from="1702712112862" duration="7859000" />
     </task>
     <task id="LOCAL-00001" summary="building signup page">
       <created>1702412734930</created>
@@ -212,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702499238093</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="building two users by InMemoryUserDetailsManager class">
+      <created>1702673062734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702673062734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +254,40 @@
     <MESSAGE value="securing two endpoints based on the user's authorities" />
     <MESSAGE value="Revert &quot;securing two endpoints based on the user's authorities&quot;&#10;&#10;This reverts commit 74431977" />
     <MESSAGE value="capturing username and authorities in handler method and using spring-security taglib" />
-    <option name="LAST_COMMIT_MESSAGE" value="capturing username and authorities in handler method and using spring-security taglib" />
+    <MESSAGE value="building two users by InMemoryUserDetailsManager class" />
+    <option name="LAST_COMMIT_MESSAGE" value="building two users by InMemoryUserDetailsManager class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1-sources.jar!/org/springframework/security/provisioning/JdbcUserDetailsManager.java</url>
+          <line>175</line>
+          <properties class="org.springframework.security.provisioning.JdbcUserDetailsManager" method="loadUsersByUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1-sources.jar!/org/springframework/security/provisioning/JdbcUserDetailsManager.java</url>
+          <line>179</line>
+          <properties class="org.springframework.security.provisioning.JdbcUserDetailsManager" method="mapToUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/6.0.11/spring-jdbc-6.0.11-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java</url>
+          <line>821</line>
+          <properties class="org.springframework.jdbc.core.JdbcTemplate" method="query">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
