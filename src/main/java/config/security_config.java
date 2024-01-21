@@ -1,5 +1,6 @@
 package config;
 
+import filters.MyAuthenticationLoggerFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -15,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import services.CustomUserDetailsServiceImpl;
 
 import javax.sql.DataSource;
@@ -50,11 +52,12 @@ public class security_config extends WebSecurityConfigurerAdapter
 	protected void configure(HttpSecurity http) throws Exception
 	{
 		http
+				.addFilterAfter(new MyAuthenticationLoggerFilter() , BasicAuthenticationFilter.class)
 				.authorizeRequests()
 				.antMatchers("/helloworld")
 				.authenticated()
 				.antMatchers("/helloworld").authenticated()
-				.antMatchers("/coder").hasAuthority("CODER")
+				.antMatchers("/coder").hasAuthority("ROLE_CODER")
 				.antMatchers("/trainer").hasAuthority("TRAINER")
 
 				.and()

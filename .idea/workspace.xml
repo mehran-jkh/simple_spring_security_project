@@ -218,6 +218,7 @@
       <workItem from="1705566867009" duration="10700000" />
       <workItem from="1705648566577" duration="804000" />
       <workItem from="1705763369809" duration="4035000" />
+      <workItem from="1705844358260" duration="2245000" />
     </task>
     <task id="LOCAL-00001" summary="building signup page">
       <created>1702412734930</created>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702747327084</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="creating custom UserDetailsServiceImpl and a CustomUser classes">
+      <created>1705845232374</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705845232374</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +306,8 @@
     <MESSAGE value="building two users by InMemoryUserDetailsManager class" />
     <MESSAGE value="implementing deleteaccount and changepassword using jdbcUserDetailsManager class" />
     <MESSAGE value="changing the defaults queries of spring-security for managing the users" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing the defaults queries of spring-security for managing the users" />
+    <MESSAGE value="creating custom UserDetailsServiceImpl and a CustomUser classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating custom UserDetailsServiceImpl and a CustomUser classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -374,6 +383,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/filters/MyAuthenticationLoggerFilter.java</url>
+          <line>13</line>
+          <properties class="filters.MyAuthenticationLoggerFilter" method="doFilter">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/config/mainconfig.java</url>
