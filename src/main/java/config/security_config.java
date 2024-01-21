@@ -3,6 +3,7 @@ package config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.security.authentication.event.AbstractAuthenticationEvent;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -14,6 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import services.CustomUserDetailsServiceImpl;
 
 import javax.sql.DataSource;
 
@@ -22,6 +24,8 @@ public class security_config extends WebSecurityConfigurerAdapter
 {
 
 	public DataSource dataSource;
+	public CustomUserDetailsServiceImpl customUserDetailsService;
+
 
 	public DataSource getDataSource() {
 		return dataSource;
@@ -33,6 +37,14 @@ public class security_config extends WebSecurityConfigurerAdapter
 	}
 
 
+	public CustomUserDetailsServiceImpl getCustomUserDetailsService() {
+		return customUserDetailsService;
+	}
+
+	@Autowired
+	public void setCustomUserDetailsService(CustomUserDetailsServiceImpl customUserDetailsService) {
+		this.customUserDetailsService = customUserDetailsService;
+	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception
@@ -65,27 +77,21 @@ public class security_config extends WebSecurityConfigurerAdapter
 //				.password("1234")
 //				.roles("admin");
 
-		   auth.jdbcAuthentication()
-				   .dataSource(dataSource)
-				   .usersByUsernameQuery("select username,password,is_active from test_user where username=?")
-				   .authoritiesByUsernameQuery("select username,role_name from test_roles where username=?")
-				   .passwordEncoder(getPasswordEncoder());
+//		   auth.jdbcAuthentication()
+//				   .dataSource(dataSource)
+//				   .usersByUsernameQuery("select username,password,is_active from test_user where username=?")
+//				   .authoritiesByUsernameQuery("select username,role_name from test_roles where username=?")
+//				   .passwordEncoder(getPasswordEncoder());
+
+
+
+		auth.userDetailsService(customUserDetailsService).passwordEncoder(getPasswordEncoder());
+
+
+
 
 	}
-//	@Override
-//	protected void configure(AuthenticationManagerBuilder auth) throws Exception
-//	{
-//		InMemoryUserDetailsManager inMemoryUserDetailsManager=new InMemoryUserDetailsManager() ;
-//
-//		UserDetails userDetails1= User.withUsername("mehran").password("1234").roles("CODER" , "TRAINER").build();
-//		UserDetails userDetails2= User.withUsername("jafar").password("4321").roles( "CODER").build();
-//
-//		inMemoryUserDetailsManager.createUser(userDetails1);
-//		inMemoryUserDetailsManager.createUser(userDetails2);
-//
-//
-//		auth.userDetailsService(inMemoryUserDetailsManager);
-//	}
+
 
 @Override
 public void configure(WebSecurity web) throws Exception

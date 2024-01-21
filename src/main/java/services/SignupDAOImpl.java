@@ -37,8 +37,11 @@ public class SignupDAOImpl implements SignupDAO{
 //		jdbcTemplate.update(sql2 , signupDTO.getUsername() , "USER");
 
 
-
-		UserDetails userDetails= User.withUsername(signupDTO.getUsername()).password(encoded_password).roles("CODER").build();
+		UserDetails userDetails= User
+				.withUsername(signupDTO.getUsername())
+				.password(encoded_password)
+				.roles("CODER")
+				.build();
 		jdbcUserDetailsManager.createUser(userDetails);
 
 

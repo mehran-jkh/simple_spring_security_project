@@ -10,15 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab330536-fd95-47bd-b221-1de250112c34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/CustomUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/CustomUserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2c0c4f8-b5ac-489f-97ff-dbb81f114342.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2023_11_58_PM.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2023_11_58_PM/HelloWorldController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2023_11_58_PM/HelloWorldController1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2023_11_58_PM/security_config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2023_11_58_PM/security_config1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_13_2023_11_58_PM/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/config/security_config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/security_config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/SignupDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/SignupDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/mainconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/mainconfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config/security_config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/security_config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/HelloWorldController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SignupDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SignupDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/SignupDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/SignupDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/mainconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/mainconfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/security_config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/config/security_config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/controllers/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/controllers/HelloWorldController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/services/SignupDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/services/SignupDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/services/SignupDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/classes/services/SignupDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/accessdenied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/accessdenied.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/coder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/coder.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/helloworld.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/helloworld.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/trainer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_spring_security_project-1.0-SNAPSHOT/WEB-INF/views/trainer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +49,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -61,6 +81,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2ZMhNlt38PHMtrgO2Ag1lqoIjhs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,7 +98,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../library_management_system" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.49310344" />
@@ -190,7 +213,11 @@
       <workItem from="1702491464650" duration="968000" />
       <workItem from="1702581766532" duration="2491000" />
       <workItem from="1702666319114" duration="5927000" />
-      <workItem from="1702712112862" duration="11942000" />
+      <workItem from="1702712112862" duration="12124000" />
+      <workItem from="1705519483365" duration="1221000" />
+      <workItem from="1705566867009" duration="10700000" />
+      <workItem from="1705648566577" duration="804000" />
+      <workItem from="1705763369809" duration="4035000" />
     </task>
     <task id="LOCAL-00001" summary="building signup page">
       <created>1702412734930</created>
@@ -227,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702740114247</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changing the defaults queries of spring-security for managing the users">
+      <created>1702747327084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702747327084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +297,8 @@
     <MESSAGE value="capturing username and authorities in handler method and using spring-security taglib" />
     <MESSAGE value="building two users by InMemoryUserDetailsManager class" />
     <MESSAGE value="implementing deleteaccount and changepassword using jdbcUserDetailsManager class" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing deleteaccount and changepassword using jdbcUserDetailsManager class" />
+    <MESSAGE value="changing the defaults queries of spring-security for managing the users" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing the defaults queries of spring-security for managing the users" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -306,7 +341,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/services/SignupDAOImpl.java</url>
-          <line>50</line>
+          <line>53</line>
           <properties class="services.SignupDAOImpl" method="delete_user">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -321,6 +356,24 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/services/CustomUserDetailsServiceImpl.java</url>
+          <line>23</line>
+          <properties class="services.CustomUserDetailsServiceImpl" method="loadUserByUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/services/UserDAOImpl.java</url>
+          <line>18</line>
+          <properties class="services.UserDAOImpl" method="load_user_by_username">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/config/mainconfig.java</url>
