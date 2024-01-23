@@ -18,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import services.CustomUserDetailsServiceImpl;
+import services.MyCustomFormAuthenticationProvider;
 
 import javax.sql.DataSource;
 
@@ -29,7 +30,7 @@ public class security_config extends WebSecurityConfigurerAdapter
 	public CustomUserDetailsServiceImpl customUserDetailsService;
 
 
-	public DataSource getDataSource() {
+	private DataSource getDataSource() {
 		return dataSource;
 	}
 
@@ -46,6 +47,14 @@ public class security_config extends WebSecurityConfigurerAdapter
 	@Autowired
 	public void setCustomUserDetailsService(CustomUserDetailsServiceImpl customUserDetailsService) {
 		this.customUserDetailsService = customUserDetailsService;
+	}
+
+
+	private MyCustomFormAuthenticationProvider myCustomFormAuthenticationProvider;
+
+	@Autowired
+	public void setMyCustomFormAuthenticationProvider(MyCustomFormAuthenticationProvider myCustomFormAuthenticationProvider) {
+		this.myCustomFormAuthenticationProvider = myCustomFormAuthenticationProvider;
 	}
 
 	@Override
@@ -88,8 +97,8 @@ public class security_config extends WebSecurityConfigurerAdapter
 
 
 
-		auth.userDetailsService(customUserDetailsService).passwordEncoder(getPasswordEncoder());
-
+//		auth.userDetailsService(customUserDetailsService).passwordEncoder(getPasswordEncoder());
+		auth.authenticationProvider(myCustomFormAuthenticationProvider);
 
 
 
